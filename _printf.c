@@ -27,10 +27,9 @@ int _printf(const char *format, ...)
 		{
 			if ((format[count] + 1) != '\0')
 			{
-				flags++;
+				flags = 0;
 				while (flags < 4)
 				{
-					count = 0;
 					if (my_print[flags].str[0] == format[count])
 					{
 					_putchar(my_print[flags].f(arg));
