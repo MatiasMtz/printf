@@ -18,35 +18,32 @@ int _printf(const char *format, ...)
 };
 	unsigned int count = 0;
 	unsigned int flags = 0;
+	unsigned int length = 0;
 	va_list arg;
 
 	va_start(arg, format);
 	while (format != NULL && format[count] != '\0')
 	{
+		flags = 0;
 		if (format[count] == '%')
 		{
-			if ((format[count] + 1) != '\0')
+			while (flags < 4)
 			{
-				flags = 0;
-				while (flags < 4)
+				if (my_print[flags].str[0] == format[count + 1])
 				{
-					if (my_print[flags].str[0] == format[count])
-					{
-					_putchar(my_print[flags].f(arg));
-					break;
-					}
-					flags++;
+				length += (my_print[flags].f(arg)) - 2;
+				break;
 				}
-				count++;
+				flags++;
 			}
-			else
-			{
-				return (0);
-			}
+			count++;
 		}
-		_putchar(format[count]);
-		format++;
+		else
+		{
+			_putchar(format[count]);
+		}
+		count++;
 	}
 	va_end(arg);
-	return (0);
+	return (count + length);
 }
