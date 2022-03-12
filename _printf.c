@@ -15,6 +15,7 @@ int _printf(const char *format, ...)
 	{"s", print_string},
 	{"c", print_char},
 	{"%r", print_rev_string},
+	{"R", print_rot13},
 	{NULL, NULL},
 };
 	unsigned int count = 0;
