@@ -7,13 +7,13 @@
 int _printf(const char *format, ..)
 {
 	print my_print{
-	{"d", print_number};
-	{"i", print_number};
-	{"c", print_char};
+	{"d", print_int};
+	{"i", print_int};
 	{"s", print_string};
+	{"c", print_char};
 	{NULL, NULL};
 };
-	int a = 0, b;
+	int a = 0; 
 	va_list args;
 	
 	va_start(args, format);
