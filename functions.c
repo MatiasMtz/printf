@@ -37,7 +37,35 @@ int print_int(va_list args)
 }
 
 /**
- *
- *
+ * print_char - prints characters.
+ * @args: arguments to print.
+ * Return: 0 if success.
  */
+int print_char(va_list args)
+{
+	char c;
 
+	va_start(args);
+	va_arg(args, char) = c;
+	_putchar(c);
+}
+
+/**
+ * print_string - prints strings.
+ * @args: arguments to print.
+ * Return: 0 if success.
+ */
+int print_string(va_list args)
+{
+	char *s;
+	unsigned int count = 0;
+
+	va_start(args);
+	va_arg(args, char *) = s;
+	while (s[count] != '\0')
+	{
+		_putchar(s[count]);
+		count++;
+	}
+	return (0);
+}
