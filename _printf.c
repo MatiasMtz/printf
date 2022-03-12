@@ -15,6 +15,7 @@ int _printf(const char *format, ...)
 	{"s", print_string},
 	{"c", print_char},
 	{"%r", print_rev_string},
+	{"o", print_octal},
 	{"R", print_rot13},
 	{NULL, NULL},
 };
@@ -29,7 +30,7 @@ int _printf(const char *format, ...)
 		flags = 0;
 		if (format[count] == '%')
 		{
-			while (flags < 6)
+			while (flags < 7)
 			{
 				if (my_print[flags].str[0] == format[count + 1])
 				{
