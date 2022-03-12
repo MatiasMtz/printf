@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
- *
+ *print_number
  *
  *@str: 
  *@f: function of specific type
