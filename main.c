@@ -24,5 +24,6 @@ int main(void)
     printf("String:[%s]\n", "I am a string !");
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
+	_printf("Unknown:[%r]\n");
     return (0);
 }

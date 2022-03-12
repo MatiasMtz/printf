@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 	{"i", print_int},
 	{"s", print_string},
 	{"c", print_char},
-	{"r", print_rev_string},
+	{"%|r", print_rev_string},
 	{NULL, NULL},
 };
 	unsigned int count = 0;
@@ -46,5 +46,5 @@ int _printf(const char *format, ...)
 		count++;
 	}
 	va_end(arg);
-	return (count + length);
+	return (count);
 }
