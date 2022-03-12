@@ -1,25 +1,23 @@
-#ifndef Header_h
-#define Header_h
-
+#ifndef MAIN_H
+#define MAIN_H
 #include <stdarg.h>
 #include <stdlib.h>
 
 /**
- *print_number
- *
- *@str: 
- *@f: function of specific type
+ *struct prt - struct that contains functions.
+ *@str - string that contains the format.
+ *@f: function of specific type.
  */
 
-typedef struct prt {
-	char * str;
+typedef struct prt
+{
+	char *str;
 	int (*f)(va_list args);
-}print;
+} print;
 
-int print_number(va_list args);
+int print_int(va_list args);
 int print_char(va_list args);
-int print_string (va_list args);
-int printf(const char *format, ...);
+int print_string(va_list args);
+int _printf(const char *format, ...);
 int _putchar(char c);
-
 #endif
