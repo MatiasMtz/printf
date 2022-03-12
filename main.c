@@ -11,6 +11,7 @@ int main(void)
 {
     int len;
     int len2;
+    char *a = "abceagsaga";
 
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
@@ -25,6 +26,6 @@ int main(void)
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
 	_printf("Unknown:[%r]\n");
-	_printf("Rot:[%R]\n", "abcdefgh");
+	_printf("Rot:[%R]\n", a);
     return (0);
 }

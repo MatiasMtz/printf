@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 		flags = 0;
 		if (format[count] == '%')
 		{
-			while (flags < 5)
+			while (flags < 6)
 			{
 				if (my_print[flags].str[0] == format[count + 1])
 				{
