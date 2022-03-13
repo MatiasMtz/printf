@@ -21,6 +21,10 @@ int print_octal(va_list args)
 		i /= 8;
 	}
 	str = malloc(aux * sizeof(char) + 1);
+	if (str == NULL)
+	{
+		return (-1);
+	}
 	while (number > 0)
 	{
 		str[n] = (number % 8) + '0';
