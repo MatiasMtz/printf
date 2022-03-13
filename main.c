@@ -30,5 +30,6 @@ int main(void)
 	_printf("Unknown:[%r]\n", a);
 	_printf("Rot:[%R]\n", a);
 	_printf("unsigned octal: [%o]\n", ui);
-    return (0);
+	_printf("unsigned binary: [%b]\n", ui);
+	return (0);
 }

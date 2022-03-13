@@ -15,8 +15,8 @@ int _printf(const char *format, ...)
 	{"s", print_string},
 	{"c", print_char},
 	{"r", print_rev_string},
-	{"%r", print_rev_string},
 	{"o", print_octal},
+	{"b", print_binary},
 	{"R", print_rot13},
 	{NULL, NULL},
 };
