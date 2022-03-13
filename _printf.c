@@ -19,6 +19,7 @@ int _printf(const char *format, ...)
 	{"b", print_binary},
 	{"x", print_hexa},
 	{"R", print_rot13},
+	{"%", print_p},
 	{NULL, NULL},
 };
 	unsigned int count = 0;
@@ -32,7 +33,7 @@ int _printf(const char *format, ...)
 		flags = 0;
 		if (format[count] == '%')
 		{
-			while (flags < 9)
+			while (flags < 10)
 			{
 				if (my_print[flags].str[0] == format[count + 1])
 				{
