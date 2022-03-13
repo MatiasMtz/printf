@@ -92,7 +92,7 @@ int main(void)
 	_printf(">%R\n", "Ubyn");
 	_printf(">%r\n", "Hola");
 	_printf("\n>PROBANDO HEXADECIMAL\n");
-/**	printf("%x\n", UINT_MAX);
+	printf("%x\n", UINT_MAX);
 	_printf("-> %x\n", UINT_MAX);
 	printf("%x\n", 160);
 	_printf("-> %x\n", 160);
@@ -101,7 +101,7 @@ int main(void)
 	printf("%x\n", 24908);
 	_printf("-> %x\n", 24908);
 	_printf("\n>PROBANDO HEXADECIMAL MAYUSCULA\n\n");
-	printf("%X\n", 29);
+/**	printf("%X\n", 29);
 	_printf("-> %X\n", 29);
 	printf("%X\n", 160);
 	_printf("-> %X\n", 160);

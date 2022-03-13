@@ -20,8 +20,8 @@ int print_rev_string(va_list args);
 int print_rot13(va_list args);
 int print_octal(va_list args);
 int print_binary(va_list args);
-int print_hexa(va_list args);
 int print_p(va_list args);
+int print_lowhexadecimal(va_list args);
 int _putchar(char c);
 int _printf(const char *format, ...);
 #endif

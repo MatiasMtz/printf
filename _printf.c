@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 	{"r", print_rev_string},
 	{"o", print_octal},
 	{"b", print_binary},
-	{"x", print_hexa},
+	{"x", print_lowhexadecimal},
 	{"R", print_rot13},
 	{"%", print_p},
 	{NULL, NULL},
