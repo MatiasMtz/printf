@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 *print_binary - function that converts decimal to binary
 *@args: arguments to print.
@@ -7,7 +8,7 @@
 int print_binary(va_list args)
 {
 	char *str;
-	int n = 0;
+	unsigned int n = 0;
 	int i = 0;
 	unsigned int aux = 0;
 	unsigned int number = 0;
@@ -27,14 +28,14 @@ int print_binary(va_list args)
 		number /= 2;
 		n++;
 	}
-	while (n != 0)
+	while (aux != 0)
 	{
-		_putchar(str[n]);
-		n--;
+		aux--;
+		_putchar(str[aux]);
+		printf("%d\n", str[aux]);
 		count++;
 	}
-	n--;
-	_putchar(str[n]);
+	count++;
 	free(str);
 	return (count);
 }
