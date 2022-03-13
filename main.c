@@ -13,7 +13,8 @@ int main(void)
     int len2;
 	unsigned int ui;
     char *a = "abceagsaga";
-
+    int b = 120;
+	
 	ui = (unsigned int)INT_MAX + 1024;
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
@@ -30,6 +31,9 @@ int main(void)
 	_printf("Unknown:[%r]\n", a);
 	_printf("Rot:[%R]\n", a);
 	_printf("unsigned octal: [%o]\n", ui);
-	_printf("unsigned binary: [%b]\n", ui);
+	printf("unsinged octal : [%o]\n", ui);
+	_printf("unsigned binary: [%b]\n", b);
+	_printf("unsigned hexadecimal:[%x, %X]\n", ui, ui);
+  	  printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
 	return (0);
 }
