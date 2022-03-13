@@ -20,7 +20,7 @@ int print_octal(va_list args)
 		aux++;
 		i /= 8;
 	}
-	str = malloc(aux * sizeof(int) + 1);
+	str = malloc(aux * sizeof(char) + 1);
 	while (number > 0)
 	{
 		str[n] = (number % 8) + '0';
@@ -29,12 +29,10 @@ int print_octal(va_list args)
 	}
 	while (n != 0)
 	{
-		_putchar(str[n]);
 		n--;
+		_putchar(str[n]);
 		count++;
 	}
-	n--;
-	_putchar(str[n]);
 	free(str);
 	return (count);
 }

@@ -1,14 +1,13 @@
 #include "main.h"
-#include <stdio.h>
 /**
-*print_binary - function that converts decimal to binary
-*@args: arguments to print.
-*Return: 0 if success;
+* print_binary - prints decimal numbers into octal base.
+* @args: arguments to print.
+* Return: Amount of characters printed.
 */
 int print_binary(va_list args)
 {
 	char *str;
-	unsigned int n = 0;
+	int n = 0;
 	int i = 0;
 	unsigned int aux = 0;
 	unsigned int number = 0;
@@ -21,21 +20,19 @@ int print_binary(va_list args)
 		aux++;
 		i /= 2;
 	}
-	str = malloc(aux * sizeof(int) + 1);
+	str = malloc(aux * sizeof(char) + 1);
 	while (number > 0)
 	{
 		str[n] = (number % 2) + '0';
 		number /= 2;
 		n++;
 	}
-	while (aux != 0)
+	while (n != 0)
 	{
-		aux--;
-		_putchar(str[aux]);
-		printf("%d\n", str[aux]);
+		n--;
+		_putchar(str[n]);
 		count++;
 	}
-	count++;
 	free(str);
 	return (count);
 }
