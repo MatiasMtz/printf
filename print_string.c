@@ -6,31 +6,14 @@
  */
 int print_string(va_list args)
 {
-	char *s;
+	char *str;
 	unsigned int count = 0;
-	unsigned int letter = 0;
-	unsigned int length = 0;
 
-	s = va_arg(args, char *);
-	if (s == NULL)
+	str = va_arg(args, char *);
+	while (str[count] != '\0')
 	{
-		s = "(NULL)";
-		length = _strlen(s);
-		while (letter < length)
-		{
-			_putchar(s[letter]);
-			letter++;
-		}
-		return (length);
+		_putchar(str[count]);
+		count++;
 	}
-	else
-	{
-		length = _strlen(s);
-		while (letter < length)
-		{
-			_putchar(s[i]);
-			letter++;
-		}
-		return (length);
-	}
+	return (count);
 }
