@@ -9,7 +9,7 @@ int print_lowhexadecimal(va_list args)
 	char *str;
 	unsigned int n = 0, i = 0, j = 0, aux = 0, number = 0, count = 0;
 
-	number = va_arg(args, unsigned int);
+	number = va_arg(args, int);
 	i = number;
 	while (i > 0)
 	{
@@ -22,7 +22,7 @@ int print_lowhexadecimal(va_list args)
 		return (-1);
 	}
 	while (number > 0)
-	{
+	{
 		n = number % 16;
 		if (n < 10)
 		{
