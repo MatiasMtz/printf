@@ -28,9 +28,7 @@ int print_binary(va_list args)
 	count = aux;
 	str = malloc(aux * sizeof(char) + 1);
 	if (str == NULL)
-	{
 		return (-1);
-	}
 	aux = 0;
 	while (number > 0)
 	{
@@ -38,11 +36,11 @@ int print_binary(va_list args)
 		number /= 2;
 		aux++;
 	}
+	str[aux] = '\0';
 	while (aux != 0)
 	{
 		aux--;
 		_putchar(str[aux]);
-		count++;
 	}
 	free(str);
 	return (count);
