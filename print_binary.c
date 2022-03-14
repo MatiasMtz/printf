@@ -22,8 +22,8 @@ int print_binary(va_list args)
 	}
 	while (i > 0)
 	{
-		aux++;
 		i /= 2;
+		aux++;
 	}
 	count = aux;
 	str = malloc(aux * sizeof(char) + 1);
