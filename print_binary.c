@@ -22,7 +22,7 @@ int print_binary(va_list args)
 	}
 	if (number < 0)
 	{
-		return (-1);
+		return (NULL);
 	}
 	while (i > 0)
 	{
