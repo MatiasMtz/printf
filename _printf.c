@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  *_printf - copy of the printf function.
  *@format: string that contains the format to print.
@@ -10,24 +9,17 @@
 int _printf(const char *format, ...)
 {
 	print my_print[] = {
-	{"d", print_int},
-	{"i", print_int},
-	{"s", print_string},
-	{"c", print_char},
-	{"r", print_rev_string},
-	{"o", print_octal},
-	{"b", print_binary},
-	{"x", print_lowhexadecimal},
-	{"R", print_rot13},
-	{"%", print_p},
+	{"d", print_int}, {"i", print_int}, {"s", print_string}, {"c", print_char},
+	{"r", print_rev_string}, {"o", print_octal}, {"b", print_binary},
+	{"x", print_lowhexadecimal}, {"R", print_rot13}, {"%", print_p},
 	{NULL, NULL},
 };
-	unsigned int count = 0;
-	unsigned int flags = 0;
-	unsigned int length = 0;
+	unsigned int count = 0, flags = 0, length = 0;
 	va_list arg;
 
 	va_start(arg, format);
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+		return (-1);
 	while (format != NULL && format[count] != '\0')
 	{
 		flags = 0;
