@@ -29,7 +29,7 @@ print my_print[] = {
 				return (-1);
 			while (my_print[flags].str)
 			{
-				if (my_print[count].pr[0] == format[i + 1])
+				if (my_print[count].str[0] == format[count + 1])
 				{
 					length += (my_print[flags].f(arg)) - 2;
 					count++;
@@ -39,7 +39,7 @@ print my_print[] = {
 				count++;
 			}
 			if (s == 0)
-				_putchar(format[i]);
+				_putchar(format[count]);
 		}
 		else
 			_putchar(format[count]);
