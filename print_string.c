@@ -8,12 +8,29 @@ int print_string(va_list args)
 {
 	char *s;
 	unsigned int count = 0;
+	unsigned int letter = 0;
+	unsigned int length = 0;
 
 	s = va_arg(args, char *);
-	while (s[count] != '\0')
+	if (s == NULL)
 	{
-		_putchar(s[count]);
-		count++;
+		s = "(NULL)";
+		length = _strlen(s);
+		while (letter < length)
+		{
+			_putchar(s[letter]);
+			letter++;
+		}
+		return (length);
 	}
-	return (0);
+	else
+	{
+		length = _strlen(s);
+		while (letter < length)
+		{
+			_putchar(s[i]);
+			letter++;
+		}
+		return (length);
+	}
 }
