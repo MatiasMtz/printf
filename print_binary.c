@@ -15,7 +15,13 @@ int print_binary(va_list args)
 
 	number = va_arg(args, unsigned int);
 	i = number;
-	while (i >= 0)
+
+	if (number == 0)
+	{
+		_putchar('0');
+		return(1);
+	}
+	while (i > 0)
 	{
 		aux++;
 		i /= 2;
