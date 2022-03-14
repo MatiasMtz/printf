@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_octal - prints decimal numbers into octal base.
+* print_lowhexadecimal - prints decimal numbers into base 16.
 * @args: arguments to print.
 * Return: Amount of characters printed.
 */

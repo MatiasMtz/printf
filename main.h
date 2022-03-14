@@ -5,7 +5,7 @@
 
 /**
  *struct prt - struct that contains functions.
- *@str - string that contains the format.
+ *@str: string that contains the format.
  *@f: function of specific type.
  */
 typedef struct prt
