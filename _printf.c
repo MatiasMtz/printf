@@ -25,7 +25,8 @@ int _printf(const char *format, ...)
 		flags = 0;
 		while (flags < 10)
 		{
-			if (my_print[flags].str[0] == format[count + 1])
+			if (my_print[flags].str[0] == format[count + 1] &&
+					my_print[flags].str[1] == format[count + 1])
 			{
 			length += my_print[flags].f(arg);
 			break;
