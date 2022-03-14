@@ -13,7 +13,6 @@ print my_print[] = {
 	{"b", print_binary}, {"R", print_rot13}, {"%", print_p},
 	{"u", print_unsigned}, {"X", print_upperhexadecimal}, {NULL, NULL},
 };
-
 	int count = 0, flags = 0, length = 0, s = 0;
 	va_list arg;
 
