@@ -8,9 +8,9 @@ int print_binary(va_list args)
 {
 	char *str;
 	int n = 0;
-	int i = 0;
+	int i;
 	unsigned int aux = 0;
-	unsigned int number = 0;
+	unsigned int number;
 	unsigned int count = 0;
 
 	number = va_arg(args, unsigned int);
