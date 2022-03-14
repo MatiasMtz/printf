@@ -23,7 +23,11 @@ int print_unsigned(va_list args)
 		_putchar('0');
 		return (1);
 	}
-
+	if (positve_numbers = 0)
+	{
+		_putchar('0');
+		return (1);
+	}
 	while (positive_numbers > 9)
 	{
 		positive_numbers /= 10;

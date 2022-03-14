@@ -36,7 +36,6 @@ int print_binary(va_list args)
 		number /= 2;
 		aux++;
 	}
-	str[aux] = '\0';
 	while (aux != 0)
 	{
 		aux--;
