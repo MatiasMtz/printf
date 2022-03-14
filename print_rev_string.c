@@ -21,5 +21,5 @@ int print_rev_string(va_list args)
 	{
 		_putchar(s[count]);
 	}
-	return (0);
+	return (strlen);
 }
