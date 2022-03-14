@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  *_printf - copy of the printf function.
  *@format: string that contains the format to print.
