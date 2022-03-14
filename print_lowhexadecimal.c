@@ -13,8 +13,10 @@ int print_lowhexadecimal(va_list args)
 	i = number;
 
 	if (number == 0)
+	{
 		_putchar('0');
 		return (1);
+	}
 	while (i > 0)
 	{
 		i /= 16;
