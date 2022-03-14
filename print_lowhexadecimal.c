@@ -13,10 +13,8 @@ int print_lowhexadecimal(va_list args)
 	i = number;
 
 	if (number == 0)
-	{
 		_putchar('0');
 		return (1);
-	}
 	while (i > 0)
 	{
 		i /= 16;
@@ -24,9 +22,7 @@ int print_lowhexadecimal(va_list args)
 	}
 	str = malloc(aux * sizeof(char) + 1);
 	if (str == NULL)
-	{
 		return (-1);
-	}
 	while (number > 0)
 	{
 		n = number % 16;

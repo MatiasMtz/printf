@@ -12,13 +12,13 @@ int print_binary(va_list args)
 	unsigned int number;
 	unsigned int count;
 
-	number = va_arg(args,int);
+	number = va_arg(args, int);
 	i = number;
 
 	if (number == 0)
 	{
 		_putchar('0');
-		return(1);
+		return (1);
 	}
 	while (i > 0)
 	{
