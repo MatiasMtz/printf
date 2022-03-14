@@ -10,8 +10,8 @@ int _printf(const char *format, ...)
 {
 print my_print[] = {
 	{"d", print_int}, {"i", print_int}, {"s", print_string}, {"c", print_char},
-	{"r", print_rev_string}, {"o", print_octal}, {"b", print_binary},
-	{"x", print_hexadecimal}, {"R", print_rot13}, {"%", print_p}, {NULL, NULL},
+	{"r", print_rev_string}, {"o", print_octal}, {"x", print_lowhexadecimal},
+	{"b", print_binary}, {"R", print_rot13}, {"%", print_p}, {NULL, NULL},
 };
 
 	unsigned int count = 0, flags = 0, length = 0;
