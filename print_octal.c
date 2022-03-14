@@ -15,6 +15,12 @@ int print_octal(va_list args)
 
 	number = va_arg(args, unsigned int);
 	i = number;
+
+	if (n == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
 	while (i > 0)
 	{
 		aux++;
