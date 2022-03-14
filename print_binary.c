@@ -15,13 +15,13 @@ int print_binary(va_list args)
 
 	number = va_arg(args, unsigned int);
 	i = number;
-	while (i > 0)
+	while (i >= 0)
 	{
 		aux++;
 		i /= 2;
 	}
 	str = malloc(aux * sizeof(char) + 1);
-	while (number > 0)
+	while (number >= 0)
 	{
 		str[n] = (number % 2) + '0';
 		number /= 2;
