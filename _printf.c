@@ -2,7 +2,6 @@
 /**
  *_printf - copy of the printf function.
  *@format: string that contains the format to print.
- *print - struct that contains flags.
  *Return: 0 if success.
  */
 int _printf(const char *format, ...)
@@ -13,7 +12,7 @@ print my_print[] = {
 	{"b", print_binary}, {"R", print_rot13}, {"%", print_p},
 	{"u", print_unsigned}, {"X", print_upperhexadecimal}, {NULL, NULL},
 };
-	int count = 0, flags = 0, length = 0, s = 0;
+	int count = 0, flags = 0, length = 0,
 	va_list arg;
 
 	va_start(arg, format);
