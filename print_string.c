@@ -10,6 +10,10 @@ int print_string(va_list args)
 	unsigned int count = 0;
 
 	str = va_arg(args, char *);
+	if (str == NULL)
+	{
+		str = "(NULL)";
+	}
 	while (str[count] != '\0')
 	{
 		_putchar(str[count]);

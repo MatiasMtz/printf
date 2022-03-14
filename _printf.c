@@ -13,7 +13,7 @@ print my_print[] = {
 	{"b", print_binary}, {"R", print_rot13}, {"%", print_p}, {NULL, NULL},
 };
 
-	unsigned int count = 0, flags = 0, length = 0, s = 0;
+	int count = 0, flags = 0, length = 0, s = 0;
 	va_list arg;
 
 	va_start(arg, format);
@@ -29,14 +29,14 @@ print my_print[] = {
 				return (-1);
 			while (my_print[flags].str)
 			{
-				if (my_print[count].str[0] == format[count + 1])
+				if (my_print[flags].str[0] == format[count + 1])
 				{
 					length += (my_print[flags].f(arg)) - 2;
 					count++;
 					s = 1;
 					break;
 				}
-				count++;
+				flags++;
 			}
 			if (s == 0)
 				_putchar(format[count]);
@@ -46,5 +46,5 @@ print my_print[] = {
 	count++;
 	}
 	va_end(arg);
-	return (count);
+	return (count + length);
 }
