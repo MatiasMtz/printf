@@ -26,7 +26,7 @@ int print_binary(va_list args)
 		aux++;
 		i /= 2;
 	}
-	count = 1;
+	count = a;
 	str = malloc(aux * sizeof(char) + 1);
 	while (number > 0)
 	{
