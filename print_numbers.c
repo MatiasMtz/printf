@@ -7,6 +7,7 @@
 int print_int(va_list args)
 {
 	int n;
+	int count2 = 0;
 	unsigned int numbers;
 	unsigned int positive_numbers;
 	unsigned int count;
@@ -16,6 +17,7 @@ int print_int(va_list args)
 	{
 		_putchar('-');
 		numbers = n * -1;
+		count2++;
 	}
 	else
 	{
@@ -31,6 +33,7 @@ int print_int(va_list args)
 	for (; count >= 1; count /= 10)
 	{
 		_putchar(((numbers / count) % 10) + '0');
+		count2++;
 	}
-	return (0);
+	return (count2);
 }

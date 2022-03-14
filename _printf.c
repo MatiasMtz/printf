@@ -17,7 +17,7 @@ print my_print[] = {
 	va_list arg;
 
 	va_start(arg, format);
-	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+	if (format == NULL)
 		return (-1);
 	while (format[count] != '\0')
 	{

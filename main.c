@@ -55,7 +55,7 @@ int main(void)
 	printf("\n---------------\n");
 	printf("Test 3");
 	printf("\nexpected: ");
-	/*a = printf("");*/
+	a = printf("");
 	printf("\nobtained: ");
 	fflush(stdout);
 	b = _printf("");
@@ -63,7 +63,7 @@ int main(void)
 	printf("\n---------------\n");
 	printf("Test 4");
 	printf("\nexpected: ");
-	/*a = printf(NULL);*/
+	a = printf(NULL);
 	printf("\nobtained: ");
 	fflush(stdout);
 	b = _printf(NULL);
@@ -79,7 +79,7 @@ int main(void)
 	printf("\n---------------\n");
 	printf("Test 6");
 	printf("\nexpected: ");
-	/*a = printf("%%s%");*/
+	a = printf("%%s%");
 	printf("\nobtained: ");
 	fflush(stdout);
 	b = _printf("%%s%");
@@ -103,15 +103,15 @@ int main(void)
 	printf("\n---------------\n");
 	printf("Test 9");
 	printf("\nexpected: ");
-	/*a = printf("%%s%%r%1buelaaaaaas%%s%%%%%%%%%%sali de %k");*/
+	a = printf("%%s%%r%1buelaaaaaas%%s%%%%%%%%%%sali de %k");
 	printf("\nobtained: ");
 	fflush(stdout);
 	b = _printf("%%s%%r%1buelaaaaaas%%s%%%%%%%%%%sali de %k");
 	cont = cont + output(a,b);
 	printf("\n---------------\n");
-	/*printf("Test 10");*/
+	printf("Test 10");
 	printf("\nexpected: ");
-	/*a = printf("%N&&S%%s%%ID%%");*/
+	a = printf("%N&&S%%s%%ID%%");
 	printf("\nobtained: ");
 	fflush(stdout);
 	b = _printf("%N&&S%%s%%ID%%");
@@ -119,7 +119,7 @@ int main(void)
 	printf("\n---------------\n");
 	printf("Test 11");
 	printf("\nexpected: ");
-	/*a = printf(NULL);*/
+	a = printf(NULL);
 	printf("\nobtained: ");
 	fflush(stdout);
 	b = _printf(NULL);
@@ -169,8 +169,8 @@ int main(void)
 	cont = cont + output(a,b);
 	printf("\n---------------\n");
 	printf("Test 17");
-	/*printf("\nexpected: ");*/
-	/*a = printf("%%%%c%%c%c", 90, NULL);*/
+	printf("\nexpected: ");
+	a = printf("%%%%c%%c%c", 90, NULL);
 	printf("\nobtained: ");
 	fflush(stdout);
 	b = _printf("%%%%c%%c%c", 90, NULL);
@@ -178,7 +178,7 @@ int main(void)
 	printf("\n---------------\n");
 	printf("Test 18");
 	printf("\nexpected: ");
-	/*a = printf("%c", NULL);*/
+	a = printf("%c", NULL);
 	printf("\nobtained: ");
 	fflush(stdout);
 	b = _printf("%c", NULL);
@@ -205,7 +205,7 @@ int main(void)
 	printf("\n---------------\n");
 	printf("Test 21");
 	printf("\nexpected: ");
-	/*a = printf("%%%s%%%", "No me quiero ir Sr. Stark :(");*/
+	a = printf("%%%s%%%", "No me quiero ir Sr. Stark :(");
 	printf("\nobtained: ");
 	fflush(stdout);
 	b = _printf("%%%s%%%", "No me quiero ir Sr. Stark :(");
@@ -229,7 +229,7 @@ int main(void)
 	printf("\n---------------\n");
 	printf("Test 24");
 	printf("\nexpected: ");
-	/*a = printf("%s%", "sabeloko");*/
+	a = printf("%s%", "sabeloko");
 	printf("\nobtained: ");
 	fflush(stdout);
 	b = _printf("%s%", "sabeloko");
@@ -237,7 +237,7 @@ int main(void)
 	printf("\n---------------\n");
 	printf("Test 25");
 	printf("\nexpected: ");
-	/*a = printf("%s", NULL);*/
+	a = printf("%s", NULL);
 	printf("\nobtained: ");
 	fflush(stdout);
 	b = _printf("%s", NULL);
@@ -245,7 +245,7 @@ int main(void)
 	printf("\n---------------\n");
 	printf("Test 26");
 	printf("\nexpected: ");
-	/*a = printf("Le dicen %c%c la rompe corazones, %s %s", 'l', 'a', "falsas", NULL);*/
+	a = printf("Le dicen %c%c la rompe corazones, %s %s", 'l', 'a', "falsas", NULL);
 	printf("\nobtained: ");
 	fflush(stdout);
 	b = _printf("Le dicen %c%c la rompe corazones, %s %s", 'l', 'a', "falsas", NULL);
