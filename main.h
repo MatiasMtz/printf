@@ -2,6 +2,7 @@
 #define MAIN_H
 #include <stdarg.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 /**
  *struct prt - struct that contains functions.
