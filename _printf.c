@@ -17,9 +17,9 @@ print my_print[] = {
 	va_list arg;
 
 	va_start(arg, format);
-	if (format == NULL)
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
-	while (format != NULL && format[count] != '\0')
+	while (format[count] != '\0')
 	{
 		flags = 0;
 		if (format[count] == '%')
@@ -29,7 +29,7 @@ print my_print[] = {
 				return (-1);
 			while (my_print[flags].str)
 			{
-				if (my_print[flags].str[0] == format[count + 1])
+				if (format[count + 1] == my_print[flags].str[0])
 				{
 					length += (my_print[flags].f(arg)) - 2;
 					count++;
