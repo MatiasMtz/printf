@@ -18,7 +18,7 @@ int print_unsigned(va_list args)
 	positive_numbers = numbers;
 	count = 1;
 
-	if(!n)
+	if(n == 0)
 	{
 		_putchar('0');
 		return (1);
