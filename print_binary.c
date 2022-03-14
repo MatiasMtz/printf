@@ -7,7 +7,7 @@
 int print_binary(va_list args)
 {
 	char *str;
-	int i;
+	unsigned int i;
 	unsigned int aux = 0;
 	unsigned int number;
 	unsigned int count;
