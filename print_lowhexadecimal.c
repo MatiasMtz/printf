@@ -31,14 +31,14 @@ int print_lowhexadecimal(va_list args)
 		}
 		else
 		{
-			str[j] = n + 55;
+			str[j] = n + 87;
 			j++;
 		}
 		number = number / 16;
 	}
 	while (j != 0)
 	{
-		n--;
+		j--;
 		_putchar(str[j]);
 		count++;
 	}

@@ -31,14 +31,14 @@ int print_upperhexadecimal(va_list args)
 		}
 		else
 		{
-			str[j] = n + 39;
+			str[j] = n + 55;
 			j++;
 		}
 		number = number / 16;
 	}
 	while (j != 0)
 	{
-		n--;
+		j--;
 		_putchar(str[j]);
 		count++;
 	}
