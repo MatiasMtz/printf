@@ -20,10 +20,6 @@ int print_binary(va_list args)
 		_putchar('0');
 		return(1);
 	}
-	if (number < 0)
-	{
-		return (NULL);
-	}
 	while (i > 0)
 	{
 		i /= 2;
