@@ -12,7 +12,7 @@ int print_binary(va_list args)
 	unsigned int number;
 	unsigned int count;
 
-	number = va_arg(args, unsigned int);
+	number = va_arg(args,int);
 	i = number;
 
 	if (number == 0)
