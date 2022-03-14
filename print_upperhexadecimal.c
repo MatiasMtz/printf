@@ -7,11 +7,9 @@
 int print_upperhexadecimal(va_list args)
 {
 	char *str;
-	unsigned int n = 0, i = 0, j = 0, aux = 0, number = 0, count = 0;
+	unsigned int n = 0, number = 0, j = 0, aux = 0, i = number, count = 0;
 
 	number = va_arg(args, unsigned int);
-	i = number;
-
 	if (number == 0)
 	{
 		_putchar('0');
