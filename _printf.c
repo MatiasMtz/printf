@@ -20,27 +20,21 @@ int _printf(const char *format, ...)
 	va_start(arg, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
-	while (format != NULL && format[count] != '\0')
+	while (format[count] != '\0')
 	{
 		flags = 0;
-		if (format[count] == '%')
+		while (flags < 10)
 		{
-			while (flags < 10)
+			if (my_print[flags].str[0] == format[count + 1])
 			{
-				if (my_print[flags].str[0] == format[count + 1])
-				{
-				length += (my_print[flags].f(arg)) - 2;
-				break;
-				}
-				flags++;
+			length += my_print[flags].f(arg);
+			break;
 			}
-			count++;
+			flags++;
 		}
-		else
-		{
-			_putchar(format[count]);
-		}
+		_putchar(format[count]);
 		count++;
+		length++;
 	}
 	va_end(arg);
 	return (count);
