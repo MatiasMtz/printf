@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *
- *
+ *print_unsigned - pirnt unsigned decimal number
+ *@args: argument to print
+ *Return: 0 if success
  */
 int print_unsigned(va_list args)
 {
@@ -17,7 +18,13 @@ int print_unsigned(va_list args)
 	positive_numbers = numbers;
 	count = 1;
 
-	while (positive_numbers < 10)
+	if(!n)
+	{
+		_putchar('0');
+		return (1);
+	}
+
+	while (positive_numbers > 9)
 	{
 		positive_numbers /= 10;
 		count *= 10;
