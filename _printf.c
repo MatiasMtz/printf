@@ -10,7 +10,7 @@ print my_print[] = {
 	{"d", print_int}, {"i", print_int}, {"s", print_string}, {"c", print_char},
 	{"r", print_revstr}, {"o", print_octal}, {"x", print_lowhex},
 	{"b", print_binary}, {"R", print_rot13}, {"%", print_p}, {"p", print_ptr},
-	{"u", print_unsigned}, {"X", print_upphex}, {NULL, NULL},
+	{"u", print_unsigned}, {"X", print_upphex}, {"S", print_S}, {NULL, NULL},
 };
 	int count = 0, flags = 0, length = 0, s = 0;
 	va_list arg;

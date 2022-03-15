@@ -27,8 +27,10 @@ int print_p(va_list args);
 int print_lowhex(va_list args);
 int print_lowhex_aux(unsigned long int a);
 int print_upphex(va_list args);
+int print_upphex_aux(int aux);
 int print_unsigned(va_list args);
 int print_ptr(va_list args);
+int print_S(va_list args);
 int _putchar(char c);
 int _printf(const char *format, ...);
 #endif
