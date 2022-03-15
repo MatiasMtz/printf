@@ -14,7 +14,7 @@ int print_ptr(va_list args)
 	if (address == NULL)
 	{
 		_printf("(nil)");
-		return (6);
+		return (5);
 	}
 	a = (unsigned long int)address;
 	_putchar('0');
