@@ -8,9 +8,9 @@ int _printf(const char *format, ...)
 {
 print my_print[] = {
 	{"d", print_int}, {"i", print_int}, {"s", print_string}, {"c", print_char},
-	{"r", print_rev_string}, {"o", print_octal}, {"x", print_lowhexadecimal},
-	{"b", print_binary}, {"R", print_rot13}, {"%", print_p}, {"p", print_pointer},
-	{"u", print_unsigned}, {"X", print_upperhexadecimal}, {NULL, NULL},
+	{"r", print_revstr}, {"o", print_octal}, {"x", print_lowhex},{".", print_lh},
+	{"b", print_binary}, {"R", print_rot13}, {"%", print_p}, {"p", print_ptr},
+	{"u", print_unsigned}, {"X", print_upphex}, {NULL, NULL},
 };
 	int count = 0, flags = 0, length = 0, s = 0;
 	va_list arg;

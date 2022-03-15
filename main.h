@@ -19,16 +19,16 @@ typedef struct prt
 int print_int(va_list args);
 int print_char(va_list args);
 int print_string(va_list args);
-int print_rev_string(va_list args);
+int print_revstr(va_list args);
 int print_rot13(va_list args);
 int print_octal(va_list args);
 int print_binary(va_list args);
 int print_p(va_list args);
-int print_lowhexadecimal(va_list args);
-int print_upperhexadecimal(va_list args);
+int print_lowhex(va_list args);
+int print_upphex(va_list args);
 int print_unsigned(va_list args);
-int print_pointer(va_list args);
-int print_lowhexa_aux(va_list args);
+int print_ptr(va_list args);
+int print_lh(va_list args);
 int _putchar(char c);
 int _printf(const char *format, ...);
 #endif
