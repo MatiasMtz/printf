@@ -24,7 +24,7 @@ int print_S(va_list args)
 			_putchar('x');
 			count = count + 2;
 			temp = str[i];
-			if (str [i] <= 16)
+			if (str[i] <= 16)
 			{
 				_putchar('0');
 			}
