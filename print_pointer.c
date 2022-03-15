@@ -14,11 +14,11 @@ int print_pointer(va_list args)
 	if (p == NULL)
 	{
 		_printf("(nil)");
-		return(6);
+		return (6);
 	}
 	a = (unsigned long int)p;
 	_putchar('0');
 	_putchar('x');
-	b = _printf("%x", a);
+	b = print_lowhexa_aux(a);
 	return (b + 2);
 }
