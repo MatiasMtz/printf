@@ -7,7 +7,7 @@
 int print_upperhexadecimal(va_list args)
 {
 	char *str;
-	unsigned int n = 0, number = 0, j = 0, aux = 0, i = number, count = 0;
+	unsigned long int n = 0, number = 0, j = 0, aux = 0, i = number, count = 0;
 
 	number = va_arg(args, unsigned int);
 	if (number == 0)
