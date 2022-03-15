@@ -153,5 +153,5 @@ All the above options work well together.
 
 ## Authors
 
-- Matias Martinez
-- Ezequiel Silva
+- Matias Martinez - [Github](https://github.com/MatiasMtz) / [Linkedin](https://www.linkedin.com/in/matiasmartinezhirsiger/)
+- Ezequiel Silva - [Github](https://github.com/ezesilva95) / [Linkedin](https://www.linkedin.com/in/ezequiel-silva-perez-1262b115b/)

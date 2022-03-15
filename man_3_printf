@@ -1,0 +1,61 @@
+.\" _printf man page
+
+.TH _PRINTF "14 March 2022" "1.0" "..."
+
+NAME
+_printf \- ...
+
+SYNOPSIS
+
+#include "main.h"
+
+int _printf(const char *format, ...)
+
+DESCRIPTION
+
+Copy of the printf function.
+A customized _printf() function, developed for a holberton project by cohort #17 Matias Martinez and Ezequiel Silva.
+This function write its output to the stdout, the standard output stream.
+
+All of these functions write the output under the control of a
+format string that specifies how subsequent arguments (or
+arguments accessed via the variable-length argument facilities of
+stdarg(3)) are converted for output.
+
+ Format of the format string
+  The format string is a character string, beginning and ending in
+       its initial shift state, if any.
+
+CONVERSION SPECIFIERS
+
+A character that specifies the type of conversion to be applied.
+The conversion specifiers and their meanings are:
+....
+
+d - used to print integers of max or and min size of an int type
+
+i - used to print integers of max or and min size of an int type
+
+s - used to print strings.
+
+c - used to print characters
+
+b - used to print a number in binary form
+
+o - used to print a number in octal form
+
+x - used to print a number in hexadecimal form
+
+r - used to print a string in reverse
+
+R - used to print a string in rot13 form
+
+
+Return Value
+
+Return value is a n number of characters except NULL
+
+
+AUTHOR 
+
+Matias martinez and Ezequiel Silva.
