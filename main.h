@@ -25,8 +25,10 @@ int print_octal(va_list args);
 int print_binary(va_list args);
 int print_p(va_list args);
 int print_lowhex(va_list args);
+int print_lowhex_aux(unsigned long int a);
 int print_upphex(va_list args);
 int print_unsigned(va_list args);
+int print_ptr(va_list args);
 int _putchar(char c);
 int _printf(const char *format, ...);
 #endif
