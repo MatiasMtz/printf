@@ -1,4 +1,4 @@
-#include "main.h"a
+#include "main.h"
 /**
  *_printf - copy of the printf function.
  *@format: string that contains the format to print.
