@@ -1,4 +1,4 @@
-#include "main.h"a
+#include "main.h"
 /**
  * print_p - prints porcentage when %%.
  * @args: arguments to print
