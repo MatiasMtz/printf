@@ -2,16 +2,16 @@
 
 .TH _PRINTF "14 March 2022" "1.0" "..."
 
-NAME
+.SH NAME
 _printf \- ...
 
-SYNOPSIS
+.SH SYNOPSIS
 
 #include "main.h"
 
 int _printf(const char *format, ...)
 
-DESCRIPTION
+.SH DESCRIPTION
 
 Copy of the printf function.
 A customized _printf() function, developed for a holberton project by cohort #17 Matias Martinez and Ezequiel Silva.
@@ -20,42 +20,72 @@ This function write its output to the stdout, the standard output stream.
 All of these functions write the output under the control of a
 format string that specifies how subsequent arguments (or
 arguments accessed via the variable-length argument facilities of
-stdarg(3)) are converted for output.
+stdarg) are converted for output.
 
- Format of the format string
+.B Format of the format string
   The format string is a character string, beginning and ending in
-       its initial shift state, if any.
+  its initial shift state, if there is any.
 
-CONVERSION SPECIFIERS
+.SH CONVERSION SPECIFIERS
 
 A character that specifies the type of conversion to be applied.
 The conversion specifiers and their meanings are:
 ....
 
-d - used to print integers of max or and min size of an int type
+.B d, i 
+Used to print signed decimals from an int argument.
 
-i - used to print integers of max or and min size of an int type
+.B s
+Used to print characters from an array. The argument is a a pointer to an array of characters.
 
-s - used to print strings.
+.B c 
+Writes a character(unsigned char) from an int argument.
 
-c - used to print characters
+.B b 
+Converts an int into a binary number and prints the result. 
 
-b - used to print a number in binary form
+.B o, u, x, X 
+Converts an unsigned int into: unsigned octal (o), unsigned decimal (u), unsigned hexadecimal in lowercase (x) or unsigned hexadecimal in uppercase (X) and prints the result.
 
-o - used to print a number in octal form
+.B S
+Converts into hexadecimal ASCII values between 0 and 32, equal or bigger than 127. Prints this way: \x, followed by the ASCII code value in hexadecimal.
 
-x - used to print a number in hexadecimal form
+.B p
+Prints in hexadecimal the memory address stored in a void * pointer argument.
 
-r - used to print a string in reverse
+.B r
+Used to print a string in reverse.
 
-R - used to print a string in rot13 form
-
-
-Return Value
-
-Return value is a n number of characters except NULL
+.B R
+The string received is printed in rot13 form.
 
 
-AUTHOR 
+.SH RETURN VALUE
+
+Return value is the number of characters printed excluding null byte.
+If there is an output error, the function returns a negative value.
+
+
+.SH EXAMPLES
+
+To print a string of characters:
+
+#include "main.h"
+_printf("Hello, World");
+
+To print the octal value of a decimal stored into a variable:
+
+#include "main.h"
+a = 20;
+_printf("%o", a);
+
+To print the name and age of a person:
+
+#include "main.h"
+a = 40;
+_printf("My name is %s and I'm %d years old.", "Janna", a);
+
+
+.SH AUTHOR 
 
 Matias martinez and Ezequiel Silva.
