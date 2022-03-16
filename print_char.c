@@ -1,4 +1,4 @@
-#include "main.h"a
+#include "main.h"
 /**
  * print_char - prints characters.
  * @args: arguments to print.
